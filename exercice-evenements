@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+<head>
+    <meta charset="utf-8">
+    <title>exercite formation</title>
+    <script src=""></script>
+  </head>
+  
+  <body>     
+    <div id="block">
+        <input type="text" id="text_dynamique"/>
+        <br/>
+        <!-- TODO 1 ici à chaque fois que l'utilisateur saisi une valeur le contenu de l'input text_dynamique doit être affiché dans la span -->
+        <span id="typed_text">ma saisie</span>
+    </div>
+    <!-- TODO 2 ici au click j'affiche le contenu de l'input text_dynamique dans une alert -->
+    <input type="button" id="boutton" value="au click j'affiche le contenu de l'input text_dynamique"/>
+    
+    <!-- TODO 3 ici au click ajouter une nouvelle div block qui aura les mêmes comportements mis en place au TODO 1 -->
+    <input type="button" id="boutton2" value="ajouter un nouveau block"/>
+   
+  </body>
+</html>
