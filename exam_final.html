@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Final exam</title>
+  </head>
+  <body>     
+    <div id="block">
+        <span>nom: </span>
+        <input type="text" id="nom"/>
+        <br/>
+        <!-- TODO 1 ici à chaque fois que l'utilisateur 
+            clique sur le bouton valider, 
+            a) si l'input text d'id nom est vide
+            on affiche une alert pour lui dire que la saisie du nom est obligatoire
+            b) si l'input text d'id nom n'est pas vide, on met dans un cookie la clé 
+            nom et la valeur saisie puis on vide l'input text d'id nom.
+        -->
+        <input type="button" id="ajouter nom" value="valider" />
+    </div>
+    <!---
+    TODO 2 dans la balise span d'id valeur_cookie
+    affichez la valeur du cookie nom sous la forme
+    le nom mis dans le cookie vaut : <la valeur du nom>
+    cette affichage doit s'effectuer à chaque fois que le clique sur valider change la valeur du cookie de clé nom.
+    -->
+    <span id="valeur_cookie"></span>
+   
+    <!--
+        TODO 3 maintenant que tout fonctionne bien, demandez à l'utilisateur 
+        de confirmer sa saisie avant que la question 1 b) ne s'exécute.
+        
+        indice servez vous d'objet confirm...
+    -->
+
+    <!--
+        TODO 4 
+        On souhaite garder un historique des anciennes valeurs du nom dans un tableau.
+        à chaque fois que la valeur du nom est validée,
+        récupérer l'ancien nom dans le cookie et mettez le dans un tableau.
+        afficher le contenu de ce tableau dans la balise old_name_values
+    -->
+    <span id="old_name_values"></span>
+  </body>
+
+  <script src="solution.js"></script>
+</html>
