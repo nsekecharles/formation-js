@@ -33,17 +33,15 @@ function clickBouton() {
 				// TODO message d'erreur
 		}
 		ecran.value = resultat;
-		operation = '';
+		valeurPrec = parseInt(ecran.value);
 	
 	} else if(boutonClicke.value == '+' || boutonClicke.value == '-' || boutonClicke.value == '/' || boutonClicke.value == 'x') {
 		operation = boutonClicke.value;
+		valeurPrec = 
 		effaceEcran();
 	
 	} else {
 		ecran.value = ecran.value + boutonClicke.value;
-		if(operation == '') {
-			valeurPrec = parseInt(ecran.value);
-		}
 	}
 }
 
